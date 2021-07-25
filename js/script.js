@@ -96,24 +96,7 @@ $('#jq').LineProgressbar({
     var config = document.querySelector('.mix-cont')
     var mixer = mixitup(config);
     
-    $(window).on("load" ,function(){
-        $(".loader-container").fadeOut(500)
-    })
-    $('.parallax-2').parallax({imageSrc: 'images/tweet.png'});
-    $('.parallax-window').parallax({
-        imageSrc: 'images/statistics-banner.png',
-        speed:  0.4,
-    });
-    $(document).ready(function(){
-
-        $(window).scroll(function(){
-          if($(this).scrollTop() > 40){
-            $('#topbtn').slideDown(400);
-          } else{
-            $('#topbtn').slideUp(400);
-          }
-        });
-      });
+    
       
     
     

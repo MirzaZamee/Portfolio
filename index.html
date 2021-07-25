@@ -722,5 +722,25 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(window).on("load" ,function(){
+        $(".loader-container").fadeOut(500)
+      })
+      $('.parallax-2').parallax({imageSrc: 'images/tweet.png'});
+      $('.parallax-window').parallax({
+          imageSrc: 'images/statistics-banner.png',
+          speed:  0.4,
+      });
+      $(document).ready(function(){
+
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 40){
+            $('#topbtn').slideDown(400);
+          } else{
+            $('#topbtn').slideUp(400);
+          }
+        });
+      });
+    </script>
 </body>
 </html>
